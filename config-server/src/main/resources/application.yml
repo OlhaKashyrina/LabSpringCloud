@@ -10,4 +10,4 @@ spring:
     config:
       server:
         native:
-          search-locations: /home/helga/Documents/Lab/Java3/configuration
+          search-locations: classpath:configuration
