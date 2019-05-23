@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: eureka-client
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9999
+      name: eureka-client
+    bus:
+      enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  jackson:
+    serialization:
+      indent_output: true
+
+queue:
+  country:
+    name: LAB.COUNTRY
+  city:
+    name: LAB.CITY
+topic:
+  exchange:
+    name: LAB.TOPIC.EXCHANGE
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+good-status: "OK,NOT_ACCEPTABLE"

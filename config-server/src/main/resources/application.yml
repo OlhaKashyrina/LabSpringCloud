@@ -1,0 +1,13 @@
+server:
+  port: 9999
+
+spring:
+  profiles:
+    active: native
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: /home/helga/Documents/Lab/Java3/configuration
