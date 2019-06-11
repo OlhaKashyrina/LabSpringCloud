@@ -1,0 +1,29 @@
+server:
+  port: 8888    #port number
+
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:7777/eureka/
+    healthcheck:
+      enabled: true
+
+logging:
+  level:
+    com.example.eurekaclient: DEBUG
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/map?serverTimezone=Europe/Kiev&useSSL=false
+    username: root
+    password: irfifybr
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+some:
+  property: 444
