@@ -33,3 +33,4 @@ management:
         include: "*"
 
 good-status: "OK,NOT_ACCEPTABLE"
+test: test
